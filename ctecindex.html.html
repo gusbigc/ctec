@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTEC | O Melhor Grupo</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #1a73e8;
+      --background-color: #f9f9fb;
+      --text-color: #333;
+      --accent-color: #e1ecf9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+      animation: slideIn 1.2s ease forwards;
+    }
+
+   .container img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+    }
+
+    .container img:hover {
+      transform: scale(1.02);
+    }
+
+    .container p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .container p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Exibe uma mensagem de boas-vindas com atraso
+    window.onload = () => {
+      setTimeout(() => {
+        alert("Bem-vindo ao site oficial do CTEC!");
+      }, 1500);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>CTEC — O Melhor Grupo do WhatsApp</h1>
+    <p>Bem-vindo ao site oficial da comunidade mais insana e unida da internet.</p>
+  </header>
+
+  <div class="container">
+    <img src="https://i.ibb.co/R4zQ5kMR/imagem-2025-05-12-223109744.png" alt="Imagem do Grupo CTEC">
+    <p>O CTEC é mais que um grupo — é uma irmandade. Aqui, risadas, debates e zoeiras são garantidas diariamente. Este espaço foi criado para homenagear todos os membros que fazem parte disso tudo. Em breve, vamos apresentar cada integrante e mostrar por que o CTEC é simplesmente lendário.</p>
+  </div>
+
+  <footer>
+    © 2025 CTEC Corporation • Todos os direitos reservados
+  </footer>
+</body>
+</html>
